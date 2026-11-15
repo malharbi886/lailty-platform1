@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Arabic:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #FDFBF7; 
+      display: flex; 
+      flex-direction: column; 
+      padding: 60px;
+      position: relative;
+    }
+    .motif {
+      position: absolute;
+      top: 60px;
+      right: 60px;
+      width: 2px;
+      height: 40px;
+      background: #C5A880;
+    }
+    h2 {
+      font-family: 'Noto Serif Arabic', serif;
+      font-size: 56px;
+      font-weight: 700;
+      color: #1A1A24;
+      margin-bottom: 24px;
+      padding-top: 0;
+    }
+    .main-content {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .ui-mockup {
+      width: 100%;
+      height: 450px;
+      background-image: url('/home/ubuntu/laylati-homepage-desktop-approved-logo.png');
+      background-size: cover;
+      background-position: top;
+      border: 1px solid #E6E2D8;
+      border-radius: 8px;
+    }
+    .features-list {
+      list-style: none;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 32px;
+    }
+    .feature-bullet {
+      width: 24px;
+      height: 24px;
+      background: #C5A880;
+      margin-left: 16px;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+    .feature-title {
+      font-family: 'Noto Sans Arabic', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #1A1A24;
+      margin-bottom: 8px;
+    }
+    .feature-desc {
+      font-family: 'Noto Sans Arabic', sans-serif;
+      font-size: 18px;
+      color: #5A5A66;
+    }
+    .page-number {
+      position: absolute;
+      bottom: 60px;
+      left: 60px;
+      font-family: 'Noto Sans Arabic', sans-serif;
+      font-size: 14px;
+      color: #5A5A66;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif"></div>
+    <h2>منصة متكاملة</h2>
+    
+    <div class="main-content">
+      <div class="ui-mockup"></div>
+      
+      <ul class="features-list">
+        <li class="feature-item">
+          <div class="feature-bullet"></div>
+          <div>
+            <p class="feature-title">اكتشاف وحجز القاعات</p>
+            <p class="feature-desc">محرك بحث متطور للفلاتر، وتوافر لحظي، وحجز فوري للقاعات الفاخرة.</p>
+          </div>
+        </li>
+        <li class="feature-item">
+          <div class="feature-bullet"></div>
+          <div>
+            <p class="feature-title">سوق المتاجر الموثقة</p>
+            <p class="feature-desc">بيئة موحدة لمقدمي خدمات الضيافة، التنسيق، والأزياء بمعايير جودة عالية.</p>
+          </div>
+        </li>
+        <li class="feature-item">
+          <div class="feature-bullet"></div>
+          <div>
+            <p class="feature-title">نظام دفع موحد</p>
+            <p class="feature-desc">عمليات دفع آمنة ومشفرة تضمن حقوق الطرفين وتدعم كافة الوسائل المحلية.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="page-number">03 / 09</div>
+  </div>
+</body>
+</html>
